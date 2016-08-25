@@ -45,7 +45,7 @@ sed -i -e "/_NATIVE_OBJC_EXCEPTIONS/d" The\ Unarchiver/UniversalDetector/Makefil
 find . -name "*.c" -or -name "*.h" -exec chmod 0644 '{}' \;
 
 %build
-export OBJCFLAGS=%{optflags}
+export OBJCFLAGS=" %{optflags}"
 %setup_compile_flags
 %make -C The\ Unarchiver/XADMaster -f Makefile.linux
 

@@ -60,7 +60,7 @@ install -dm 0755 %{buildroot}%{_mandir}/man1/
 install -pm 0644 The\ Unarchiver/Extra/*.1 %{buildroot}%{_mandir}/man1/
 
 # bash-completion
-install -dm 0755 %{buildroot}%{_datadir}/bash-completion/completionsU/
+install -dm 0755 %{buildroot}%{_datadir}/bash-completion/completions/
 install -pm 0644 The\ Unarchiver/Extra/lsar.bash_completion %{buildroot}%{_datadir}/bash-completion/completions/lsar
 install -pm 0644 The\ Unarchiver/Extra/unar.bash_completion %{buildroot}%{_datadir}/bash-completion/completions/unar
 
